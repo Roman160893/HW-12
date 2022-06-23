@@ -1,0 +1,50 @@
+body {
+   height: 100vh;
+   background: url(https://vishivkabiserom.com.ua/image/cache/data/dl2//eb4014_1-1000x1000.jpg) 0 -80px/ cover  no-repeat  ;
+   
+}
+
+.keys {
+   max-width: 1200px;
+   height: 200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 15px;
+   position: absolute;
+   top: 60%;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+}
+.key {
+   border: 1px solid #333;
+   border-radius: 5px;
+   padding: 10px;
+   text-align: center;
+   width: 100px;
+   background: rgb(242,253,45);
+   background: linear-gradient(0deg, rgba(242,253,45,0.6) 50%, rgba(45,70,253,0.6) 50%);
+   transition: all 0.5s;
+   cursor: pointer;
+}
+.active {
+   transform: scale(1.1);
+   border-color: yellow;
+   background: rgb(242,253,45);
+   background: linear-gradient(0deg, rgba(242,253,45,1) 50%, rgba(45,70,253,1) 50%);
+}
+kbd {
+   color: rgb(0, 0, 0);
+   font-family:'Courier New', Courier, monospace;
+   font-weight: bold;
+   font-size: 24px;
+   
+}
+
+@media (max-width:780px) {
+   .keys {
+      flex-direction: column;
+      top: 30%;
+   }
+}
